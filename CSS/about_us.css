@@ -1,3 +1,5 @@
+
+
 /* Hero Section */
 .AU-hero{
   position: relative;
@@ -42,9 +44,9 @@
 }
 .HeadingText p{
     margin: 0px;
-    font-family: serif;
+    font-family: "Roboto",monospace;
     font-size: 50px;
-    font-weight: bolder;
+    font-weight: 900;
     color: #090040;
 }
 
@@ -52,7 +54,36 @@
     color:black;
     font-size:25px;
     margin-top:20px;
-    font-weight: 200;
+    font-weight: normal;
     max-width: 50vw;
     text-align: justify;
+}
+
+.HeadingText-Column {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-right: 50px;
+}
+
+.Column-Numbers p{
+  font-size: 100px;
+  color: black;
+  font-weight: 400;
+  margin: 0;
+}
+
+.Column-Title p{
+  font-size: 25px;
+  color: #ffd95e;
+  margin: 0;
+}
+
+.Column-desc p{
+  font-size: 20px;
+  margin-top: .5em;
+  color: black;
+  font-weight: normal;
+  text-align: justify;
 }

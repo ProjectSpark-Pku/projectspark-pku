@@ -51,7 +51,7 @@
 }
 
 .HeadingText-Text p {
-    color:black;
+    color:rgb(76, 76, 76);
     font-size:25px;
     margin-top:20px;
     font-weight: normal;
@@ -83,7 +83,15 @@
 .Column-desc p{
   font-size: 20px;
   margin-top: .5em;
-  color: black;
+  color: rgb(76, 76, 76);
   font-weight: normal;
-  text-align: justify;
+  text-align: left;
+}
+
+.Column-img {
+  padding-bottom: 15px;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
+  display: block
 }

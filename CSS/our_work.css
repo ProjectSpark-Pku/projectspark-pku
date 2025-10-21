@@ -149,6 +149,17 @@ main {
   line-height: 1.6;
 }
 
+.timeline-link{
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.timeline-link:hover .timeline-content{
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.24);
+}
+
 /* ✨ Responsive Improvements ✨ */
 @media (max-width: 900px) {
   .timeline {

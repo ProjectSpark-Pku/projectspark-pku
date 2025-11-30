@@ -96,6 +96,16 @@
         "name": "Natalie Angeline Gunawan",
         "role": "Member",
         "image": "/Images/Members/natalie1.jpg"
+      },
+      {
+        "name": "Karen",
+        "role": "Member",
+        "image": "/Images/Members/karen1.jpg"
+      },
+      {
+        "name": "Caren Ivonny",
+        "role": "Member",
+        "image": "/Images/Members/caren1.jpg"
       }
     ],
     "Logistics & Operations": [
@@ -143,6 +153,21 @@
         "name": "Edward Pangestu",
         "role": "Member",
         "image": "/Images/Members/edward1.jpg"
+      },
+            {
+        "name": "Joyceline Mint Wijaya",
+        "role": "Member",
+        "image": "/Images/Members/joyceline1.jpg"
+      },
+      {
+        "name": "Abelia Calista Pasaribu",
+        "role": "Member",
+        "image": "/Images/Members/abelia1.jpg"
+      },
+      {
+        "name": "Celvia Bella",
+        "role": "Member",
+        "image": "/Images/Members/celvia1.jpg"
       }
     ],
     "Documentation": [
@@ -160,6 +185,16 @@
         "name": "Naura Nadine",
         "role": "Member",
         "image": "/Images/Members/naura1.jpg"
+      },
+      {
+        "name": "Jayden Laurenz",
+        "role": "Member",
+        "image": "/Images/Members/jayden.jpg"
+      },
+      {
+        "name": "Trixie Oshana Kho",
+        "role": "Member",
+        "image": "/Images/Members/trixie1.jpg"
       }
     ],
     "Technical": [

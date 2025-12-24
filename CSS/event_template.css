@@ -269,6 +269,10 @@
 
 
 /* Header */
+.GradientBackground {
+  background-image: conic-gradient(from 45deg,#d7f9f4,#fff9e2,#fff3e8,#e5f8ff,#d7f9f4);
+  padding-bottom: 100px;
+}
 .HeadingStatementText {
   margin-left: 100px;
   margin-right: 100px;
@@ -301,7 +305,6 @@
 
 .HeadingStatementText-Heading {
   margin-top: 10px;
-  /* display: flex; */
   box-sizing: border-box;
   flex: 1;
   height: inherit;
@@ -313,7 +316,6 @@
 
 .Content-right{
   margin-top: 48px;
-  /* display: flex; */
   flex: 1;
   flex-direction: column;
 }
@@ -331,6 +333,99 @@
 .HeadingStatementText-Text {
   font-weight: 400;
   line-height: 1.38;
+}
+
+/* Main Topics */
+.MainTopics {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 32px;
+  padding-right: 32px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.MainTopics-inner {
+  display: grid;
+  grid-gap: 50px;
+  box-sizing: inherit;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.MainTopics-item {
+  grid-template-areas: 
+  "icon"
+  "head"
+  "text";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto 1fr auto;
+  grid-column-gap: 1em;
+  grid-row-gap: 1em;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: grid;
+  position: relative;
+}
+
+/* grid area mapping */
+.item-icon {
+  grid-area: icon;
+  max-width: 128px;
+  display: block;
+}
+
+.item-icon img {
+  width: 100%;
+  height: auto;
+}
+
+.item-heading {
+  grid-area: head;
+  align-self: center;
+  font-weight: 900;
+  font-size: 30px;
+  color:#090040;
+  line-height: 1.07;
+  letter-spacing: .36px;
+  text-transform: uppercase;
+}
+
+.item-text {
+  grid-area: text;
+  font-size: 20px;
+}
+/* Dividers for Main Topic */
+.MainTopics-item::after {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -25px;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.MainTopics-item::before {
+  content: "";
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: -25px;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.MainTopics-item:nth-child(n + 3)::before {
+  display: none;
+}
+
+.MainTopics-item:nth-child(4)::after {
+  display:none;
+}
+
+.MainTopics-item:nth-child(2)::after {
+  display:none;
 }
 
 @media (max-width: 900px) {

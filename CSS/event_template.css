@@ -191,12 +191,34 @@
   gap: 70px;
 }
 
-/* INDIVIDUAL BLOCKS */
+/* contains both detail blocks */
+.detail-container {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 40px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* Individual block */
 .detail-block {
   display: flex;
   flex-direction: column;
   max-width: 700px;
+  position: relative;
   padding: 20px;
+}
+
+/* adding background */
+.detail-block.complement .GradientBackground {
+  background-image: radial-gradient(from 45deg, #f3fcfd,  #f6fdfc,  #fffaf2,  #fff6f3,  #fff8f0);
+  padding: 0px;
+}
+
+/* For complement texts */
+.detail-block.complement {
+  padding-right: 0px;
+  padding-top: 100px;
 }
 
 /* Left & Right alternating alignment */
@@ -212,12 +234,24 @@
 
 /* Titles */
 .detail-block h2 {
-  font-size: 30px;
+  font-size: 34px;
   margin-bottom: 10px;
-  font-weight: 700;
+  margin-top: 20px;
+  font-weight: 900;
   background: linear-gradient(90deg, #090040, #fffb12, #090040);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+}
+
+.detail-block h3 {
+  font-size: 20px;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color:#555;
+  text-transform: uppercase;
 }
 
 /* Paragraphs */
@@ -327,12 +361,16 @@
   letter-spacing: .36px;
   line-height: 1.2;
   margin-bottom: 25px;
-  text-align: justify;
+  text-align: left;
+  /* text-wrap: balance; */
 }
 
 .HeadingStatementText-Text {
+  color : rgb(76, 76, 76);
   font-weight: 400;
   line-height: 1.38;
+  font-size: 18px;
+  letter-spacing: normal;
 }
 
 /* Main Topics */
@@ -357,7 +395,8 @@
   grid-template-areas: 
   "icon"
   "head"
-  "text";
+  "text"
+  "complements";
   grid-template-columns: 1fr;
   grid-template-rows: auto auto auto 1fr auto;
   grid-column-gap: 1em;
@@ -394,6 +433,19 @@
 .item-text {
   grid-area: text;
   font-size: 20px;
+  color: rgb(76, 76, 76);
+  line-height: 1.38;
+  font-weight: 400;
+  align-self: flex-start;
+}
+
+.item-complement {
+  grid-area: complements;
+  font-size: 20px;
+  color: rgb(76, 76, 76);
+  line-height: 1.38;
+  font-weight: 400;
+  align-self: flex-start;
 }
 /* Dividers for Main Topic */
 .MainTopics-item::after {

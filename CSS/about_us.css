@@ -59,6 +59,38 @@
     text-align: justify;
 }
 
+.BackgroundStats {
+  background-image: conic-gradient(
+  from 45deg,
+  #edf9f6,
+  #f2fbf7,
+  #f7fced,
+  #fbfdf1,
+  #ffffff,
+  #fbfdf1,
+  #f7fced,
+  #f2fbf7,
+  #edf9f6
+);
+}
+
+.Stats {
+  margin:100px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display: flex;
+  justify-content: space-between;
+  gap:130px;
+}
+
+.Stats p{
+    margin: 0px;
+    font-family: "Roboto",monospace;
+    font-size: 50px;
+    font-weight: 900;
+    color: #090040;
+}
+
 .HeadingText-Column {
   width: 400px;
   display: flex;

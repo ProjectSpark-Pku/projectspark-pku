@@ -1,129 +1,416 @@
+/* =============================================
+   ABOUT US — Editorial / Story-driven
+   Brand: #090040 (navy), #ffd95e (yellow), white
+   ============================================= */
 
-
-/* Hero Section */
-.AU-hero{
+/* ── Hero ── */
+.AU-hero {
   position: relative;
-  height: 400px;
-  background: url(../Images/PNG/AU-hero1.JPG);
-  background-position: 0px -200px;
-  background-size: cover;
+  height: 560px;
+  background: url(../Images/PNG/AU-hero1.JPG) center / cover no-repeat;
   display: flex;
+  align-items: flex-end;
+  color: white;
+  overflow: hidden;
+}
+
+.AU-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(9, 0, 64, 0.9) 0%,
+    rgba(9, 0, 64, 0.4) 55%,
+    transparent 100%
+  );
+}
+
+.AU-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 50px 70px;
+  max-width: 900px;
+}
+
+.AU-hero-content h1 {
+  margin: 0 0 16px;
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  font-size: 4rem;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.AU-hero-sub {
+  margin: 0;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 400;
+  line-height: 1.6;
+  max-width: 560px;
+}
+
+/* ── Shared section scaffolding ── */
+.AU-section {
+  padding: 100px 0;
+}
+
+.AU-section-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.AU-label {
+  font-family: Arial, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #ffd95e;
+  background: #090040;
+  display: inline-block;
+  padding: 5px 12px;
+  margin-bottom: 24px;
+}
+
+.AU-headline {
+  font-family: Arial, sans-serif;
+  font-size: 2.6rem;
+  font-weight: 900;
+  color: #090040;
+  line-height: 1.1;
+  margin: 0 0 32px;
+  letter-spacing: -0.02em;
+}
+
+.AU-headline-sm {
+  font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: #090040;
+  line-height: 1.15;
+  margin: 0 0 28px;
+  letter-spacing: -0.01em;
+}
+
+.AU-body {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: rgb(76, 76, 76);
+  margin: 0 0 20px;
+}
+
+/* ── Mission ── */
+.AU-mission {
+  border-left: 6px solid #ffd95e;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
+  padding-left: 0;
+  padding-right: 0;
+  border-left: none;
+}
+
+.AU-mission .AU-section-inner {
+  border-left: 6px solid #ffd95e;
+  padding-left: 50px;
+  max-width: 800px;
+}
+
+/* ── Origin Story ── */
+.AU-origin {
+  background: #090040;
+  padding: 100px 0;
+}
+
+.AU-origin-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
   align-items: center;
-  justify-content: left;
-  text-align: left;
+}
+
+.AU-origin-text .AU-label {
+  background: #ffd95e;
+  color: #090040;
+}
+
+.AU-origin-text .AU-headline-sm {
   color: white;
 }
 
-.AU-hero::after{
-  content: "";
-  position: absolute;
-  top: 0; left: 0; right:0; bottom:0;
-  background: rgba(0,0,0,0.35);
+.AU-origin-text .AU-body {
+  color: rgba(255, 255, 255, 0.75);
 }
 
-.AU-hero-content{
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  padding:10px;
-  font-size: 30px;
-  margin-bottom: 10px;
+.AU-pullquote {
+  border: none;
+  margin: 0;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.06);
+  border-left: 4px solid #ffd95e;
+  font-family: Arial, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.6;
+  color: white;
 }
 
-.AU-hero-content h1{
-  margin: 10px;
-  font-weight: bold;
-  font-family: serif;
+/* ── Stats ── */
+.AU-stats-section {
+  background: #090040;
+  padding: 0 0 100px;
 }
 
-/* Main information sections */
-.HeadingText{
-    margin:100px;
-    padding-left: 32px;
-    padding-right: 32px;
-}
-.HeadingText p{
-    margin: 0px;
-    font-family: "Roboto",monospace;
-    font-size: 50px;
-    font-weight: 900;
-    color: #090040;
-}
-
-.HeadingText-Text p {
-    color:rgb(76, 76, 76);
-    font-size:25px;
-    margin-top:20px;
-    font-weight: normal;
-    max-width: 50vw;
-    text-align: justify;
-}
-
-.BackgroundStats {
-  background-image: conic-gradient(
-  from 45deg,
-  #edf9f6,
-  #f2fbf7,
-  #f7fced,
-  #fbfdf1,
-  #ffffff,
-  #fbfdf1,
-  #f7fced,
-  #f2fbf7,
-  #edf9f6
-);
-}
-
-.Stats {
-  margin:100px;
-  padding-left: 32px;
-  padding-right: 32px;
+.AU-stats-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 70px;
   display: flex;
-  justify-content: space-between;
-  gap:130px;
+  align-items: flex-start;
+  gap: 0;
 }
 
-.Stats p{
-    margin: 0px;
-    font-family: "Roboto",monospace;
-    font-size: 50px;
-    font-weight: 900;
-    color: #090040;
-}
-
-.HeadingText-Column {
-  width: 400px;
+.AU-stat {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  margin-right: 50px;
+  padding: 0 40px;
+  border-left: 2px solid rgba(255, 255, 255, 0.12);
 }
 
-.Column-Numbers p{
-  font-size: 100px;
-  color: black;
-  font-weight: 400;
+.AU-stat:first-child {
+  border-left: none;
+  padding-left: 0;
+}
+
+.AU-stat-number {
+  font-family: Arial, sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ffd95e;
+  line-height: 1;
+  display: block;
+}
+
+.AU-stat-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin: 10px 0 14px;
+  display: block;
+}
+
+.AU-stat-desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.6;
+}
+
+.AU-stat-divider {
+  display: none;
+}
+
+/* ── Approach ── */
+.AU-approach .AU-section-inner {
+  max-width: 800px;
+}
+
+/* ── Values ── */
+.AU-values-section {
+  background: #090040;
+  padding: 100px 0;
+}
+
+.AU-values-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+.AU-values-inner .AU-label {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: block;
+}
+
+.AU-values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.AU-value-card {
+  padding: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.AU-value-card:hover {
+  border-color: #ffd95e;
+  background: rgba(255, 217, 94, 0.05);
+}
+
+.AU-value-icon img {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.AU-value-title {
+  font-family: Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #ffd95e;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.AU-value-desc {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.65);
+  line-height: 1.7;
   margin: 0;
 }
 
-.Column-Title p{
-  font-size: 25px;
+/* ── CTA ── */
+.AU-cta-section {
+  padding: 120px 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.AU-cta-inner {
+  max-width: 680px;
+  text-align: center;
+}
+
+.AU-cta-heading {
+  font-family: Arial, sans-serif;
+  font-size: 2.8rem;
+  font-weight: 900;
   color: #090040;
-  margin: 0;
+  margin: 0 0 20px;
+  letter-spacing: -0.02em;
 }
 
-.Column-desc p{
-  font-size: 20px;
-  margin-top: .5em;
+.AU-cta-body {
+  font-size: 1.05rem;
   color: rgb(76, 76, 76);
-  font-weight: normal;
-  text-align: left;
+  line-height: 1.75;
+  margin: 0 0 40px;
 }
 
-.Column-img {
-  padding-bottom: 15px;
-  width: 100%;
-  justify-items: center;
-  align-items: center;
-  display: block
+.AU-cta-buttons {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.AU-btn {
+  display: inline-block;
+  padding: 14px 30px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: background 0.25s, color 0.25s;
+}
+
+.AU-btn--primary {
+  background: #090040;
+  color: white;
+}
+
+.AU-btn--primary:hover {
+  background: #ffd95e;
+  color: #090040;
+}
+
+.AU-btn--secondary {
+  border: 2px solid #090040;
+  color: #090040;
+}
+
+.AU-btn--secondary:hover {
+  background: #090040;
+  color: white;
+}
+
+/* ── Mobile ── */
+@media (max-width: 900px) {
+  .AU-hero {
+    height: 400px;
+  }
+
+  .AU-hero-content {
+    padding: 30px;
+  }
+
+  .AU-hero-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .AU-headline {
+    font-size: 1.9rem;
+  }
+
+  .AU-headline-sm {
+    font-size: 1.6rem;
+  }
+
+  .AU-origin-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0 30px;
+  }
+
+  .AU-stats-inner {
+    flex-direction: column;
+    padding: 0 30px;
+    gap: 40px;
+  }
+
+  .AU-stat {
+    border-left: 3px solid #ffd95e;
+    padding-left: 20px;
+  }
+
+  .AU-stat:first-child {
+    border-left: 3px solid #ffd95e;
+    padding-left: 20px;
+  }
+
+  .AU-values-inner {
+    padding: 0 30px;
+  }
+
+  .AU-values-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .AU-mission .AU-section-inner {
+    padding-left: 24px;
+  }
+
+  .AU-section-inner {
+    padding: 0 30px;
+  }
 }

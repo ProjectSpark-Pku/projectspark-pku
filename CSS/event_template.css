@@ -45,7 +45,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
-  align-items: start;
+  align-items: end;
 }
 
 .HeadingStatementText-Heading {
@@ -63,6 +63,8 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .HeadingStatementText-Statement {
@@ -76,7 +78,7 @@
 .HeadingStatementText-Text {
   font-family: Arial, sans-serif;
   font-size: 1.05rem;
-  color: rgb(100, 100, 100);
+  color: rgb(35, 35, 35);
   line-height: 1.75;
 }
 
@@ -304,4 +306,50 @@
   .HeadingStatementText-Heading {
     font-size: 1.8rem;
   }
+}
+
+/* ── Event details strip ── */
+.event-details-strip {
+  display: flex;
+  gap: 0;
+  margin-top: auto;
+  background: #090040;
+  padding: 24px 28px;
+  flex-wrap: wrap;
+  border-radius: 8px;
+}
+
+.event-detail {
+  flex: 1;
+  min-width: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-right: 24px;
+  border-right: 1.5px solid rgba(255, 255, 255, 0.12);
+  padding-left: 24px;
+}
+
+.event-detail:first-child {
+  padding-left: 0;
+}
+
+.event-detail:last-child {
+  border-right: none;
+}
+
+.event-detail-label {
+  font-family: Arial, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.event-detail-value {
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
 }

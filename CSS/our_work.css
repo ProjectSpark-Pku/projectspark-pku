@@ -71,7 +71,7 @@ main {
   z-index: 10;
   transition: background 0.3s, transform 0.3s;
   box-sizing: border-box;
-  pointer-events: none;
+pointer-events: none;
 }
 
 .timeline-item.left .timeline-dot {

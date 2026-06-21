@@ -1,88 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Project SPARK</title>
-  <link rel="stylesheet" href="/CSS/main.css">
-  <link rel="stylesheet" href="/CSS/navbar.css">
-  <link rel="stylesheet" href="/CSS/footer.css">
-  <link rel="stylesheet" href="/CSS/home.css">
-</head>
-<body>
-
-<div id="navbar-placeholder"></div>
-
-  <main>
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-image">
-      <img src="/Images/PNG/Hero photo.png" alt="Hero Image">
-    </div>
-    <div class="hero-text">
-      <h2 style="color: black;">
-        <span style="color:#ffd95e"><strong>Project Spark</strong></span> has been working to
-        inspire creativity and collaboration through technology.
-      </h2>
-      <p>
-        We aim to empower students and communities to use innovation 
-        for solving real-world problems.
-      </p>
-      <a href="HTML/About Us.html" class="btn-about">About Us →</a>
-    </div>
-  </section>
-
-    <!-- Mission Statement -->
-    <section class="mission-section">
-      <div class="mission-inner">
-        <p class="mission-label">OUR MISSION</p>
-        <h2 class="mission-heading">We believe every child deserves the chance to <span class="mission-highlight">learn, grow, and thrive.</span></h2>
-        <p class="mission-body">
-          Project SPARK is a youth-led organization based in Pekanbaru, Indonesia. Through education, sustainability, and community empowerment, we work directly with underprivileged children in adoption centers, bringing hands-on learning, creative programs, and meaningful human connection to those who need it most.
-        </p>
-      </div>
-    </section>
-
-    <!-- Stats Strip -->
-    <section class="stats-strip">
-      <div class="stat-item">
-        <span class="stat-number">100+</span>
-        <span class="stat-label">Children Helped</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-number">5+</span>
-        <span class="stat-label">Orphanages Supported</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-number">7</span>
-        <span class="stat-label">Events Held</span>
-      </div>
-      <div class="stat-divider"></div>
-      <div class="stat-item">
-        <span class="stat-number">34</span>
-        <span class="stat-label">Members</span>
-      </div>
-    </section>
-
-    <!-- Call to Action -->
-    <section class="cta-section">
-      <div class="cta-inner">
-        <h2 class="cta-heading">Ready to make a difference?</h2>
-        <p class="cta-body">Every contribution, big or small, helps us bring more programs, more learning, and more hope to children across Pekanbaru.</p>
-        <div class="cta-buttons">
-          <!--change the about us link to a donate link in the future : ps oliver-->
-          <a href="HTML/About Us.html" class="cta-btn cta-btn--secondary">Donate →</a>
-          <a href="HTML/Our Work.html" class="cta-btn cta-btn--secondary">See Our Work →</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div id="footer-placeholder"></div>
-
-  <script src="/JavaScript/main.js" defer></script>
-  <script src="/JavaScript/hover.js" defer></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- This keeps your clean, original browser tab title -->
+    <title>Home - Project SPARK</title>
+  </head>
+  <body>
+    <!-- React needs this exact empty div to inject your website layout -->
+    <div id="root"></div>
+    
+    <!-- This is the engine that fires up your React/Vite components -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>

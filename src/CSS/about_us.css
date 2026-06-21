@@ -7,7 +7,7 @@
 .AU-hero {
   position: relative;
   height: 560px;
-  background: url(../Images/PNG/AU-hero1.JPG) center / cover no-repeat;
+  background: url(/Images/PNG/AU-hero1.JPG) center / cover no-repeat;
   display: flex;
   align-items: flex-end;
   color: white;

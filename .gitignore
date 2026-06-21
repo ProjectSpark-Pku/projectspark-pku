@@ -23,3 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Test scripts
+test.js
+test.cjs
+test-puppeteer.cjs
+test-render.jsx
